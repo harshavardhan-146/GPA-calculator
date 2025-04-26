@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GPA Calculator</h1>
+            <p>Calculate your GPA easily by selecting your year, degree, and subjects.</p>
+        </header>
+
+        <main>
+            <div id="step1" class="step">
+                <h2>Select Year</h2>
+                <select id="yearSelect" class="dropdown">
+                    <option value="">--Select Year--</option>
+                    <option value="1st">1st Year</option>
+                    <option value="2nd">2nd Year</option>
+                    <option value="3rd">3rd Year</option>
+                    <option value="4th">4th Year</option>
+                </select>
+            </div>
+
+            <div id="step2" class="step hidden">
+                <h2>Select Degree</h2>
+                <select id="degreeSelect" class="dropdown">
+                    <option value="">--Select Degree--</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="BBA">BBA</option>
+                </select>
+            </div>
+
+            <div id="step3" class="step hidden">
+                <h2>Select Branch</h2>
+                <select id="branchSelect" class="dropdown">
+                    <option value="">--Select Branch--</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="Mech">Mech</option>
+                    <option value="Civil">Civil</option>
+                </select>
+            </div>
+
+            <div id="step4" class="step hidden">
+                <h2>Select Group</h2>
+                <select id="groupSelect" class="dropdown">
+                    <option value="">--Select Group--</option>
+                    <option value="A">Group A</option>
+                    <option value="B">Group B</option>
+                </select>
+            </div>
+
+            <div id="subjects" class="step hidden">
+                <h2>Enter Grades</h2>
+                <div id="subjectInputs"></div>
+                <button id="calculateGPA" class="btn">Calculate GPA</button>
+            </div>
+
+            <div id="result" class="step hidden">
+                <h2>Your GPA</h2>
+                <p id="gpaOutput" class="gpa-result"></p>
+            </div>
+
+            <!-- Coming Soon Message -->
+            <div id="message" class="step hidden">
+                <h2 id="messageText" style="text-align: center; color: #dc3545;"></h2>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
